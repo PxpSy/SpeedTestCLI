@@ -1,0 +1,31 @@
+<svg width="800" height="360" xmlns="http://www.w3.org/2000/svg">
+  <!-- Terminal window -->
+  <rect x="5" y="5" width="790" height="350" rx="8" fill="#1e1e1e" stroke="#4a5568" stroke-width="2"/>
+  <!-- Header bar -->
+  <rect x="5" y="5" width="790" height="25" rx="8" fill="#2d3748"/>
+  <circle cx="18" cy="17" r="4" fill="#fc8181"/>
+  <circle cx="32" cy="17" r="4" fill="#f6e05e"/>
+  <circle cx="46" cy="17" r="4" fill="#68d391"/>
+  <text x="60" cy="20" font-family="monospace" font-size="10" fill="#e2e8f0">Find Command Game - Master Level</text>
+  
+  <!-- Terminal content -->
+  <text x="15" y="50" font-family="monospace" font-size="11" fill="#c5c8c6">$ speedtest</text>
+  <text x="15" y="68" font-family="monospace" font-size="11" fill="#81c995">=== NIVEAU: MASTER (+12 points) ===</text>
+  <text x="15" y="86" font-family="monospace" font-size="11" fill="#e2e8f0">Résultat de la commande mystère :</text>
+  <text x="15" y="104" font-family="monospace" font-size="11" fill="#e2e8f0">================================</text>
+  
+  <text x="15" y="122" font-family="monospace" font-size="9" fill="#e2e8f0">drwxr-xr-x  22 root root  4096 mai   16 01:35 /</text>
+  <text x="15" y="138" font-family="monospace" font-size="9" fill="#e2e8f0">lrwxrwxrwx   1 root root     7 mai   16 01:28 /bin -&gt; usr/bin</text>
+  <text x="15" y="154" font-family="monospace" font-size="9" fill="#e2e8f0">drwxr-xr-x   6 root root  4096 juin  11 18:00 /boot</text>
+  <text x="15" y="170" font-family="monospace" font-size="9" fill="#e2e8f0">drwxr-xr-x 156 root root 12288 juin  10 09:00 /etc</text>
+  <text x="15" y="186" font-family="monospace" font-size="9" fill="#e2e8f0">drwxr-xr-x   4 root root  4096 mai   16 01:36 /home</text>
+  <text x="15" y="202" font-family="monospace" font-size="9" fill="#e2e8f0">lrwxrwxrwx   1 root root     7 mai   16 01:28 /lib -&gt; usr/lib</text>
+  <text x="15" y="218" font-family="monospace" font-size="9" fill="#e2e8f0">drwxr-xr-x   5 root root  4096 mai   22 15:20 /opt</text>
+  <text x="15" y="234" font-family="monospace" font-size="9" fill="#e2e8f0">drwxr-xr-x  13 root root  4096 mai   21 13:45 /usr</text>
+  <text x="15" y="250" font-family="monospace" font-size="11" fill="#e2e8f0">================================</text>
+  <text x="15" y="268" font-family="monospace" font-size="11" fill="#e2e8f0">Recreate this result with a 'find' command.</text>
+  <text x="15" y="286" font-family="monospace" font-size="11" fill="#a0aec0">Hint: difficulty level 'master'</text>
+  <text x="15" y="304" font-family="monospace" font-size="10" fill="#c5c8c6">find&gt; find / -maxdepth 1 \( -type d -o -type l \) | xargs ls -ld</text>
+  <text x="15" y="322" font-family="monospace" font-size="11" fill="#81c995">🎉 Correct ! (+12 points) 🏆 Premier essai ! Bonus +1 point</text>
+  <text x="15" y="340" font-family="monospace" font-size="11" fill="#68d391">Score total: 13</text>
+</svg>

@@ -10,16 +10,13 @@ if [ ! -d "/usr/local/bin" ]; then
   exit 1
 fi
 
-# Remove any existing speedtest binary or link
-if [ -e "/usr/local/bin/speedtest" ]; then
-  echo "speedtest already exists. Overwriting..."
-  sudo rm -f "/usr/local/bin/speedtest"
-fi
+# Remove any existing speedtest link or file
+sudo rm -f "/usr/local/bin/speedtest"
 
-# Create a symlink to your main.sh
-sudo ln -s "$SCRIPT_DIR/src/main.sh" "/usr/local/bin/speedtest"
+# Create (or update) a symlink to your main.sh (at root level, not in src/)
+sudo ln -sf "$SCRIPT_DIR/main.sh" "/usr/local/bin/speedtest"
 
-# Make it executable
-sudo chmod +x "/usr/local/bin/speedtest"
+# Make the source file executable (not the symlink)
+sudo chmod +x "$SCRIPT_DIR/main.sh"
 
 echo "Installation complete! Run 'speedtest' anywhere in your terminal."
